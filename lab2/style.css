@@ -1,0 +1,61 @@
+.d-m{
+    display: inline-block;
+}
+.img1 {
+    border: 1px solid;
+    padding: 5px;
+    box-shadow: 8px 8px 8px 8px gray;
+}
+.img2{
+    border: 1px solid;
+    padding: 2px;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-con{
+    display: flex;
+    justify-content: space-evenly
+}
+.size-img{
+    width: 24%;
+    height: 250px;
+}
+.bg {
+    border-style: groove;
+    /* border-left: 0ch; */
+    border-top: 0ch
+}
+.bg1 {
+    border-style: groove;
+    border-left: 0ch;
+    border-top: 0ch;
+    /* border-right: 0ch; */
+}
+.bg3{
+    /* border-bottom: 0ch */
+}
+.bg4{
+    border-bottom: 0ch;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+i{
+    margin-left: 40px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+/* =========================================== Register ============================== */
+.check{
+    margin-left: 100px
+}
+.check1{
+    margin-left: 130px
+}
+.ma-2{
+    margin-top: 10px
+}
