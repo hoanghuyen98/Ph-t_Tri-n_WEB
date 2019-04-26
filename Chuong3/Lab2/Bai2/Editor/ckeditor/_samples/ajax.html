@@ -1,0 +1,55 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright (c) 2003-2009, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>FCK Editor</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<script type="text/javascript" src="../ckeditor.js"></script>
+	<script src="sample.js" type="text/javascript"></script>
+	<link href="sample.css" rel="stylesheet" type="text/css" />
+	<script id="headscript" type="text/javascript">
+		//<![CDATA[
+
+		var editor;
+
+		function createEditor() {
+			if (editor)
+				return;
+
+			var html = document.getElementById('editorcontents').innerHTML;
+
+			editor = CKEDITOR.appendTo('editor');
+			editor.setData(html);
+		}
+
+		function getContent() {
+			if (!editor)
+				return;
+
+			document.getElementById('editorcontents').innerHTML = editor.getData();
+			document.getElementById('contents').style.display = '';
+
+		}
+	</script>
+</head>
+
+<body>
+	<p>
+		<input onclick="createEditor();" type="button" value="Create Editor" />
+		<input onclick="getContent();" type="button" value="Get content" />
+	</p>
+	<div id="editor">
+	</div>
+	<div id="contents" style="display: none">
+		<p>Contents:</p>
+		<div id="editorcontents">
+	</div>
+
+</body>
+
+</html>
